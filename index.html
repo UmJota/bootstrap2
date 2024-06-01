@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootstrapAvançado</title>
+    <link rel="stylesheet" href="./1 lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(196, 90, 164);
+        }
+
+        header{
+            background-color: rgb(104, 42, 85);
+            color: rgb(255, 255, 255);
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        .carousel-caption{
+            background-color: rgba(0, 0, 0, 0.644);
+            margin-bottom: 20px;
+        }
+
+        .card {
+            margin-top: 50px;
+        }
+
+        .card-header{
+            text-align: center;
+        }
+
+        .rodape {
+            padding-top: 500px;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            background-color: rgb(196, 90, 164);
+        }
+        
+        footer {
+            background-color: rgb(104, 42, 85);
+            padding: 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+        <header id="header" class="fixed-top">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>Donut mania</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" href="#Carousel">Carousel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#cards">Grids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#rodape">Rodape</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+    <div data-bs-spy="scroll" data-bs-target="#header" class="container">
+    <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./img/donut-3680831_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>DONUTS MANIA</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./img/donut-5331966_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>OS MELHORES DONUTS DO MUNDO</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./img/pink-5181799_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>EM APENAS UM LUGAR</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#Carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#Carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#Carousel" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+
+        <div class="d-none d-lg-block">
+            <div id="cards" class="row">
+        <div class="col-4">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-karina-ustiuzhanina-313369745-14122684.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-hearder d-flex justify-content-center">
+                    <h2>MEGA DONUT</h2>
+                </div>
+                <img src="./img/pexels-nishantaneja-2955820.jpg">
+                <div class="card-body">
+                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                    <h4>Valor: $$$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-hearder d-flex justify-content-center">
+                    <h2>MEGA DONUT</h2>
+                </div>
+                <img src="./img/pexels-karina-ustiuzhanina-313369745-14122684.jpg">
+                <div class="card-body">
+                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                    <h4>Valor: $$$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-hearder d-flex justify-content-center">
+                    <h2>MEGA DONUT</h2>
+                </div>
+                <img src="./img/pexels-the-5th-50003-179907.jpg">
+                <div class="card-body">
+                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                    <h4>Valor: $$$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-hearder d-flex justify-content-center">
+                    <h2>MEGA DONUT</h2>
+                </div>
+                <img src="./img/pexels-nishantaneja-2955820.jpg">
+                <div class="card-body">
+                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                    <h4>Valor: $$$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-hearder d-flex justify-content-center">
+                    <h2>MEGA DONUT</h2>
+                </div>
+                <img src="./img/pexels-the-5th-50003-179907.jpg">
+                <div class="card-body">
+                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                    <h4>Valor: $$$</h4>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+
+        <div class="d-none d-md-block d-lg-none">
+            <div id="cards" class="row">
+                <div class="col-6">
+                            <div class="card">
+                                <div class="card-hearder d-flex justify-content-center">
+                                    <h2>MEGA DONUT</h2>
+                                </div>
+                                <img src="./img/pexels-karina-ustiuzhanina-313369745-14122684.jpg">
+                                <div class="card-body">
+                                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                                    <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-nishantaneja-2955820.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-karina-ustiuzhanina-313369745-14122684.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-the-5th-50003-179907.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-nishantaneja-2955820.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-the-5th-50003-179907.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none d-sm-block d-md-none">
+            <div id="cards" class="row">
+                <div class="col-12">
+                            <div class="card">
+                                <div class="card-hearder d-flex justify-content-center">
+                                    <h2>MEGA DONUT</h2>
+                                </div>
+                                <img src="./img/pexels-karina-ustiuzhanina-313369745-14122684.jpg">
+                                <div class="card-body">
+                                    <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                                    <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-nishantaneja-2955820.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-karina-ustiuzhanina-313369745-14122684.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-the-5th-50003-179907.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-nishantaneja-2955820.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-hearder d-flex justify-content-center">
+                            <h2>MEGA DONUT</h2>
+                        </div>
+                        <img src="./img/pexels-the-5th-50003-179907.jpg">
+                        <div class="card-body">
+                            <h5>Descrição: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ea officia deleniti nemo!.</h5>
+                            <h4>Valor: $$$</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="rodape" class="rodape">
+    <footer>
+        <div class="container">
+            <h2 class="d-flex justify-content-center">
+                &copy; Donut Mania - Todos os direitos reservados - 2024
+            </h2>
+    </footer>
+    </div>
+    <script src="./1 lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
